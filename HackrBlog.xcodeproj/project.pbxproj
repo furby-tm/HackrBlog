@@ -13,9 +13,13 @@
 		AAC4AD06209B8DF900C26D8A /* HackrBlog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAC4AD04209B8DF900C26D8A /* HackrBlog.xcdatamodeld */; };
 		AAC4AD08209B8DFA00C26D8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAC4AD07209B8DFA00C26D8A /* Assets.xcassets */; };
 		AAC4AD0B209B8DFA00C26D8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC4AD09209B8DFA00C26D8A /* LaunchScreen.storyboard */; };
+		AAC4AD13209B940F00C26D8A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAC4AD12209B940F00C26D8A /* GoogleService-Info.plist */; };
+		D21C9609B8AEE93386122FD2 /* Pods_HackrBlog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA07868CCC244696B737F90D /* Pods_HackrBlog.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		677D189DDDFC5803DEF9A0C5 /* Pods-HackrBlog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackrBlog.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackrBlog/Pods-HackrBlog.release.xcconfig"; sourceTree = "<group>"; };
+		AA07868CCC244696B737F90D /* Pods_HackrBlog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackrBlog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC4ACFA209B8DF900C26D8A /* HackrBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackrBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC4ACFD209B8DF900C26D8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAC4ACFF209B8DF900C26D8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		AAC4AD07209B8DFA00C26D8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAC4AD0A209B8DFA00C26D8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAC4AD0C209B8DFA00C26D8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAC4AD12209B940F00C26D8A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DB153E2BBDAABA8641CC3B27 /* Pods-HackrBlog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackrBlog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackrBlog/Pods-HackrBlog.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D21C9609B8AEE93386122FD2 /* Pods_HackrBlog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B090893775183F0E0DEBCF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB153E2BBDAABA8641CC3B27 /* Pods-HackrBlog.debug.xcconfig */,
+				677D189DDDFC5803DEF9A0C5 /* Pods-HackrBlog.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6851F40F60B77FAAA2B24FDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA07868CCC244696B737F90D /* Pods_HackrBlog.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AAC4ACF1209B8DF900C26D8A = {
 			isa = PBXGroup;
 			children = (
 				AAC4ACFC209B8DF900C26D8A /* HackrBlog */,
 				AAC4ACFB209B8DF900C26D8A /* Products */,
+				0B090893775183F0E0DEBCF2 /* Pods */,
+				6851F40F60B77FAAA2B24FDD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +89,7 @@
 				AAC4AD09209B8DFA00C26D8A /* LaunchScreen.storyboard */,
 				AAC4AD0C209B8DFA00C26D8A /* Info.plist */,
 				AAC4AD04209B8DF900C26D8A /* HackrBlog.xcdatamodeld */,
+				AAC4AD12209B940F00C26D8A /* GoogleService-Info.plist */,
 			);
 			path = HackrBlog;
 			sourceTree = "<group>";
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AAC4AD0F209B8DFA00C26D8A /* Build configuration list for PBXNativeTarget "HackrBlog" */;
 			buildPhases = (
+				E44CC47DE58DAFDC96CA9F59 /* [CP] Check Pods Manifest.lock */,
 				AAC4ACF6209B8DF900C26D8A /* Sources */,
 				AAC4ACF7209B8DF900C26D8A /* Frameworks */,
 				AAC4ACF8209B8DF900C26D8A /* Resources */,
+				295BC7384714B785AFE6C8A8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +155,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAC4AD0B209B8DFA00C26D8A /* LaunchScreen.storyboard in Resources */,
+				AAC4AD13209B940F00C26D8A /* GoogleService-Info.plist in Resources */,
 				AAC4AD08209B8DFA00C26D8A /* Assets.xcassets in Resources */,
 				AAC4AD03209B8DF900C26D8A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		295BC7384714B785AFE6C8A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HackrBlog/Pods-HackrBlog-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackrBlog/Pods-HackrBlog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E44CC47DE58DAFDC96CA9F59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HackrBlog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AAC4ACF6209B8DF900C26D8A /* Sources */ = {
@@ -282,15 +353,13 @@
 		};
 		AAC4AD10209B8DFA00C26D8A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB153E2BBDAABA8641CC3B27 /* Pods-HackrBlog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2KKBAP635S;
 				INFOPLIST_FILE = HackrBlog/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.furbystudios.HackrBlog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -300,15 +369,13 @@
 		};
 		AAC4AD11209B8DFA00C26D8A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 677D189DDDFC5803DEF9A0C5 /* Pods-HackrBlog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2KKBAP635S;
 				INFOPLIST_FILE = HackrBlog/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.furbystudios.HackrBlog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
