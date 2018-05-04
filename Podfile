@@ -6,6 +6,9 @@ target 'HackrBlog' do
   use_frameworks!
 
   # Pods for HackrBlog
+  pod 'Firebase'
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
 
 end

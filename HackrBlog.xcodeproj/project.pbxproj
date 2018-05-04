@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA3EE51E209BA2A7007727BD /* GT-Walsheim-Bold.TTF in Resources */ = {isa = PBXBuildFile; fileRef = AA3EE51D209BA2A7007727BD /* GT-Walsheim-Bold.TTF */; };
+		AA3EE521209BA2C8007727BD /* GT-Walsheim-Medium.TTF in Resources */ = {isa = PBXBuildFile; fileRef = AA3EE520209BA2C8007727BD /* GT-Walsheim-Medium.TTF */; };
+		AA3EE523209BA2DA007727BD /* GT-Walsheim-Medium-Oblique.TTF in Resources */ = {isa = PBXBuildFile; fileRef = AA3EE522209BA2DA007727BD /* GT-Walsheim-Medium-Oblique.TTF */; };
+		AA3EE525209BA305007727BD /* GT-Walsheim-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA3EE524209BA305007727BD /* GT-Walsheim-Black.ttf */; };
+		AA3EE527209BD0D5007727BD /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3EE526209BD0D5007727BD /* SignupViewController.swift */; };
+		AA3EE529209BD0F0007727BD /* ForumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3EE528209BD0EF007727BD /* ForumViewController.swift */; };
 		AAC4ACFE209B8DF900C26D8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC4ACFD209B8DF900C26D8A /* AppDelegate.swift */; };
-		AAC4AD00209B8DF900C26D8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC4ACFF209B8DF900C26D8A /* ViewController.swift */; };
+		AAC4AD00209B8DF900C26D8A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC4ACFF209B8DF900C26D8A /* LoginViewController.swift */; };
 		AAC4AD03209B8DF900C26D8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC4AD01209B8DF900C26D8A /* Main.storyboard */; };
 		AAC4AD06209B8DF900C26D8A /* HackrBlog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAC4AD04209B8DF900C26D8A /* HackrBlog.xcdatamodeld */; };
 		AAC4AD08209B8DFA00C26D8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAC4AD07209B8DFA00C26D8A /* Assets.xcassets */; };
@@ -20,9 +26,15 @@
 /* Begin PBXFileReference section */
 		677D189DDDFC5803DEF9A0C5 /* Pods-HackrBlog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackrBlog.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackrBlog/Pods-HackrBlog.release.xcconfig"; sourceTree = "<group>"; };
 		AA07868CCC244696B737F90D /* Pods_HackrBlog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackrBlog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA3EE51D209BA2A7007727BD /* GT-Walsheim-Bold.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Bold.TTF"; sourceTree = "<group>"; };
+		AA3EE520209BA2C8007727BD /* GT-Walsheim-Medium.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Medium.TTF"; sourceTree = "<group>"; };
+		AA3EE522209BA2DA007727BD /* GT-Walsheim-Medium-Oblique.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Medium-Oblique.TTF"; sourceTree = "<group>"; };
+		AA3EE524209BA305007727BD /* GT-Walsheim-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Black.ttf"; sourceTree = "<group>"; };
+		AA3EE526209BD0D5007727BD /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		AA3EE528209BD0EF007727BD /* ForumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumViewController.swift; sourceTree = "<group>"; };
 		AAC4ACFA209B8DF900C26D8A /* HackrBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackrBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC4ACFD209B8DF900C26D8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AAC4ACFF209B8DF900C26D8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AAC4ACFF209B8DF900C26D8A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AAC4AD02209B8DF900C26D8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AAC4AD05209B8DF900C26D8A /* HackrBlog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HackrBlog.xcdatamodel; sourceTree = "<group>"; };
 		AAC4AD07209B8DFA00C26D8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,6 +73,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AA3EE51F209BA2AE007727BD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AA3EE524209BA305007727BD /* GT-Walsheim-Black.ttf */,
+				AA3EE522209BA2DA007727BD /* GT-Walsheim-Medium-Oblique.TTF */,
+				AA3EE520209BA2C8007727BD /* GT-Walsheim-Medium.TTF */,
+				AA3EE51D209BA2A7007727BD /* GT-Walsheim-Bold.TTF */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		AAC4ACF1209B8DF900C26D8A = {
 			isa = PBXGroup;
 			children = (
@@ -83,13 +106,16 @@
 			isa = PBXGroup;
 			children = (
 				AAC4ACFD209B8DF900C26D8A /* AppDelegate.swift */,
-				AAC4ACFF209B8DF900C26D8A /* ViewController.swift */,
+				AAC4ACFF209B8DF900C26D8A /* LoginViewController.swift */,
+				AA3EE526209BD0D5007727BD /* SignupViewController.swift */,
+				AA3EE528209BD0EF007727BD /* ForumViewController.swift */,
 				AAC4AD01209B8DF900C26D8A /* Main.storyboard */,
 				AAC4AD07209B8DFA00C26D8A /* Assets.xcassets */,
 				AAC4AD09209B8DFA00C26D8A /* LaunchScreen.storyboard */,
 				AAC4AD0C209B8DFA00C26D8A /* Info.plist */,
 				AAC4AD04209B8DF900C26D8A /* HackrBlog.xcdatamodeld */,
 				AAC4AD12209B940F00C26D8A /* GoogleService-Info.plist */,
+				AA3EE51F209BA2AE007727BD /* Fonts */,
 			);
 			path = HackrBlog;
 			sourceTree = "<group>";
@@ -156,7 +182,11 @@
 			files = (
 				AAC4AD0B209B8DFA00C26D8A /* LaunchScreen.storyboard in Resources */,
 				AAC4AD13209B940F00C26D8A /* GoogleService-Info.plist in Resources */,
+				AA3EE51E209BA2A7007727BD /* GT-Walsheim-Bold.TTF in Resources */,
 				AAC4AD08209B8DFA00C26D8A /* Assets.xcassets in Resources */,
+				AA3EE521209BA2C8007727BD /* GT-Walsheim-Medium.TTF in Resources */,
+				AA3EE525209BA305007727BD /* GT-Walsheim-Black.ttf in Resources */,
+				AA3EE523209BA2DA007727BD /* GT-Walsheim-Medium-Oblique.TTF in Resources */,
 				AAC4AD03209B8DF900C26D8A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,11 +201,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HackrBlog/Pods-HackrBlog-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -209,8 +241,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA3EE527209BD0D5007727BD /* SignupViewController.swift in Sources */,
 				AAC4AD06209B8DF900C26D8A /* HackrBlog.xcdatamodeld in Sources */,
-				AAC4AD00209B8DF900C26D8A /* ViewController.swift in Sources */,
+				AA3EE529209BD0F0007727BD /* ForumViewController.swift in Sources */,
+				AAC4AD00209B8DF900C26D8A /* LoginViewController.swift in Sources */,
 				AAC4ACFE209B8DF900C26D8A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,7 +393,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2KKBAP635S;
 				INFOPLIST_FILE = HackrBlog/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.furbystudios.HackrBlog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -375,7 +412,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2KKBAP635S;
 				INFOPLIST_FILE = HackrBlog/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.furbystudios.HackrBlog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
