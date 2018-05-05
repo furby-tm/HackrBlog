@@ -13,17 +13,22 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBAction func loginButton(_ sender: UIButton) {
+        // Grab email and password values from UITextFields
         let email = emailField.text
         let password = passwordField.text
         
+        // Authenticate email and password for user through Firebase
         Auth.auth().signIn(withEmail: email!, password: password!, completion: { (user: User?, error) in
+                // If there are no errors
                 if error == nil{
+                    // Continue to Forum View Controller
                     let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
                     
                     let forumViewController = storyBoard.instantiateViewController(withIdentifier: "forumViewController") as UIViewController
                     self.present(forumViewController, animated:true, completion:nil)
-                }
-                else{
+                // Otherwise, if there's an error with the username/password combination
+                } else {
+                    // Alert the user there was a problem signing in
                     let alert = UIAlertController(title: "Error", message: "Incorrect email/password combination.", preferredStyle: UIAlertControllerStyle.alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
                         switch action.style{
