@@ -13,15 +13,32 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var signupButton: UIButton!
-    @IBAction func signUpButton(_ sender: UIButton) {
+    @IBAction func signupButton(_ sender: UIButton) {
         let email = emailField.text
         let password = passwordField.text
         
         Auth.auth().createUser(withEmail: email!, password: password!, completion: { (user: User?, error) in
             if error == nil {
-                print("WOO")
+                let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                
+                let forumViewController = storyBoard.instantiateViewController(withIdentifier: "forumViewController") as UIViewController
+                self.present(forumViewController, animated:true, completion:nil)
             }else{
-                print("Boo")
+                let alert = UIAlertController(title: "Error", message: "This account already exists, please try signing in.", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                    switch action.style{
+                    case .default:
+                        print("default")
+                        
+                    case .cancel:
+                        print("cancel")
+                        
+                    case .destructive:
+                        print("destructive")
+                        
+                        
+                    }}))
+                self.present(alert, animated: true, completion: nil)
             }
         })
     }
@@ -30,7 +47,6 @@ class SignupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
     }
     
     override func viewDidLayoutSubviews() {

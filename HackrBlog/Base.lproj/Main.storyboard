@@ -62,6 +62,7 @@
                                     <color key="titleColor" red="1" green="0.2924028730146051" blue="0.40137944458638364" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
+                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mnf-7C-0Ts"/>
                                     <segue destination="ujF-nH-eZ5" kind="show" id="lJ7-D9-qYc"/>
                                 </connections>
                             </button>
@@ -106,7 +107,7 @@
         <!--Forum View Controller-->
         <scene sceneID="PCq-S4-HC6">
             <objects>
-                <viewController id="ujF-nH-eZ5" customClass="ForumViewController" customModule="HackrBlog" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="forumViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ujF-nH-eZ5" customClass="ForumViewController" customModule="HackrBlog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YYK-Sw-byi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -195,8 +196,7 @@
                                     <color key="titleColor" red="1" green="0.29240287300000001" blue="0.40137944460000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <action selector="signUpButton:" destination="kkU-Z8-rjl" eventType="touchUpInside" id="can-Bh-FZr"/>
-                                    <action selector="signupButton:" destination="kkU-Z8-rjl" eventType="touchUpInside" id="2zg-Fc-3cV"/>
+                                    <action selector="signupButton:" destination="kkU-Z8-rjl" eventType="touchUpInside" id="f1a-Zc-X4T"/>
                                 </connections>
                             </button>
                         </subviews>
