@@ -22,6 +22,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Set up Firebase
         FirebaseApp.configure()
         
+        Auth.auth().addStateDidChangeListener { auth, user in
+            if let user = user {
+                // User is signed in.
+                let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                
+                let forumViewController = storyBoard.instantiateViewController(withIdentifier: "forumViewController") as UIViewController
+                self.window!.rootViewController = forumViewController
+            }
+        }
+        
         return true
     }
 

@@ -13,6 +13,8 @@
 		AA3EE525209BA305007727BD /* GT-Walsheim-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA3EE524209BA305007727BD /* GT-Walsheim-Black.ttf */; };
 		AA3EE527209BD0D5007727BD /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3EE526209BD0D5007727BD /* SignupViewController.swift */; };
 		AA3EE529209BD0F0007727BD /* ForumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3EE528209BD0EF007727BD /* ForumViewController.swift */; };
+		AA3EE52B20A0C0D7007727BD /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA3EE52A20A0C0D7007727BD /* fontawesome-webfont.ttf */; };
+		AA3EE52D20A0CB12007727BD /* ThreadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3EE52C20A0CB12007727BD /* ThreadCell.swift */; };
 		AAC4ACFE209B8DF900C26D8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC4ACFD209B8DF900C26D8A /* AppDelegate.swift */; };
 		AAC4AD00209B8DF900C26D8A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC4ACFF209B8DF900C26D8A /* LoginViewController.swift */; };
 		AAC4AD03209B8DF900C26D8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC4AD01209B8DF900C26D8A /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 		AA3EE524209BA305007727BD /* GT-Walsheim-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GT-Walsheim-Black.ttf"; sourceTree = "<group>"; };
 		AA3EE526209BD0D5007727BD /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		AA3EE528209BD0EF007727BD /* ForumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumViewController.swift; sourceTree = "<group>"; };
+		AA3EE52A20A0C0D7007727BD /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
+		AA3EE52C20A0CB12007727BD /* ThreadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadCell.swift; sourceTree = "<group>"; };
 		AAC4ACFA209B8DF900C26D8A /* HackrBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackrBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC4ACFD209B8DF900C26D8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAC4ACFF209B8DF900C26D8A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 		AA3EE51F209BA2AE007727BD /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				AA3EE52A20A0C0D7007727BD /* fontawesome-webfont.ttf */,
 				AA3EE524209BA305007727BD /* GT-Walsheim-Black.ttf */,
 				AA3EE522209BA2DA007727BD /* GT-Walsheim-Medium-Oblique.TTF */,
 				AA3EE520209BA2C8007727BD /* GT-Walsheim-Medium.TTF */,
@@ -110,6 +115,7 @@
 				AA3EE526209BD0D5007727BD /* SignupViewController.swift */,
 				AA3EE528209BD0EF007727BD /* ForumViewController.swift */,
 				AAC4AD01209B8DF900C26D8A /* Main.storyboard */,
+				AA3EE52C20A0CB12007727BD /* ThreadCell.swift */,
 				AAC4AD07209B8DFA00C26D8A /* Assets.xcassets */,
 				AAC4AD09209B8DFA00C26D8A /* LaunchScreen.storyboard */,
 				AAC4AD0C209B8DFA00C26D8A /* Info.plist */,
@@ -183,6 +189,7 @@
 				AAC4AD0B209B8DFA00C26D8A /* LaunchScreen.storyboard in Resources */,
 				AAC4AD13209B940F00C26D8A /* GoogleService-Info.plist in Resources */,
 				AA3EE51E209BA2A7007727BD /* GT-Walsheim-Bold.TTF in Resources */,
+				AA3EE52B20A0C0D7007727BD /* fontawesome-webfont.ttf in Resources */,
 				AAC4AD08209B8DFA00C26D8A /* Assets.xcassets in Resources */,
 				AA3EE521209BA2C8007727BD /* GT-Walsheim-Medium.TTF in Resources */,
 				AA3EE525209BA305007727BD /* GT-Walsheim-Black.ttf in Resources */,
@@ -244,6 +251,7 @@
 				AA3EE527209BD0D5007727BD /* SignupViewController.swift in Sources */,
 				AAC4AD06209B8DF900C26D8A /* HackrBlog.xcdatamodeld in Sources */,
 				AA3EE529209BD0F0007727BD /* ForumViewController.swift in Sources */,
+				AA3EE52D20A0CB12007727BD /* ThreadCell.swift in Sources */,
 				AAC4AD00209B8DF900C26D8A /* LoginViewController.swift in Sources */,
 				AAC4ACFE209B8DF900C26D8A /* AppDelegate.swift in Sources */,
 			);

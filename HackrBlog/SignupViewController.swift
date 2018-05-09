@@ -13,16 +13,31 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var signupButton: UIButton!
+    @IBOutlet weak var usernameField: UITextField!
+    @IBOutlet weak var fullNameField: UITextField!
+    
     @IBAction func signupButton(_ sender: UIButton) {
         // Grab email and password values from UITextFields
         let email = emailField.text
         let password = passwordField.text
+        let username = usernameField.text
+        let fullName = fullNameField.text
         
         // Authenticate and create email and password for user through Firebase
         Auth.auth().createUser(withEmail: email!, password: password!, completion: { (user: User?, error) in
             // If there are no errors
             if error == nil {
                 // Continue to Forum View Controller
+                let ref = Database.database().reference()
+                
+                let post = [
+                    "username":  username,
+                    "fullname": fullName,
+                    "email":   email
+                ]
+                
+                ref.child("users").child((user?.uid)!).setValue(post)
+                
                 let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
                 
                 let forumViewController = storyBoard.instantiateViewController(withIdentifier: "forumViewController") as UIViewController
@@ -59,12 +74,18 @@ class SignupViewController: UIViewController {
         super.viewDidLayoutSubviews()
         let emailBorder = CALayer()
         let passwordBorder = CALayer()
+        let usernameBorder = CALayer()
+        let fullNameBorder = CALayer()
         let width = CGFloat(2.0)
         let pinkColor = UIColor(red: 255/255, green: 75/255, blue: 102/255, alpha: 1.0)
         emailBorder.borderColor = pinkColor.cgColor
         passwordBorder.borderColor = pinkColor.cgColor
+        usernameBorder.borderColor = pinkColor.cgColor
+        fullNameBorder.borderColor = pinkColor.cgColor
         emailBorder.frame = CGRect(x: 0, y: emailField.frame.size.height - width, width:  emailField.frame.size.width, height: emailField.frame.size.height)
-        passwordBorder.frame = CGRect(x: 0, y: passwordField.frame.size.height - width, width:  emailField.frame.size.width, height: passwordField.frame.size.height)
+        passwordBorder.frame = CGRect(x: 0, y: passwordField.frame.size.height - width, width:  passwordField.frame.size.width, height: passwordField.frame.size.height)
+        usernameBorder.frame = CGRect(x: 0, y: usernameField.frame.size.height - width, width:  usernameField.frame.size.width, height: usernameField.frame.size.height)
+        fullNameBorder.frame = CGRect(x: 0, y: fullNameField.frame.size.height - width, width:  fullNameField.frame.size.width, height: fullNameField.frame.size.height)
         
         emailBorder.borderWidth = width
         emailField.layer.addSublayer(emailBorder)
@@ -72,6 +93,12 @@ class SignupViewController: UIViewController {
         passwordBorder.borderWidth = width
         passwordField.layer.addSublayer(passwordBorder)
         passwordField.layer.masksToBounds = true
+        usernameBorder.borderWidth = width
+        usernameField.layer.addSublayer(usernameBorder)
+        usernameField.layer.masksToBounds = true
+        fullNameBorder.borderWidth = width
+        fullNameField.layer.addSublayer(fullNameBorder)
+        fullNameField.layer.masksToBounds = true
         
     }
     

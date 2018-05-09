@@ -22,6 +22,7 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
+		<string>fontawesome-webfont.ttf</string>
 		<string>GT-Walsheim-Black.ttf</string>
 		<string>GT-Walsheim-Medium-Oblique.TTF</string>
 		<string>GT-Walsheim-Medium.TTF</string>
